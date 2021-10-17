@@ -1,0 +1,13 @@
+html, button, input, select, textarea {
+    color: rgb(238, 203, 203);
+    background-color: rgb(121, 63, 63);
+}
+    
+html { 
+    font-size: 1em; 
+    line-height: 1.4; 
+}
+#wrapper{
+    max-width: 900px;
+    min-height: 320px;
+}
