@@ -1,6 +1,6 @@
 html, button, input, select, textarea {
-    color: #444; ;
-    background-color: rgb(240, 221, 221);
+    color: #444; 
+    
 }
     
 html { 
@@ -9,15 +9,32 @@ html {
 }
 h1{
     font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
 }
 #wrapper{
     max-width: 900px;
     min-height: 320px;
     margin: auto;
+    padding: 5%;
+    background-color: rgb(240, 221, 221);
 }
 #image{
     border: 1px #ccc;
     border-radius: 3px;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.infoPerso{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+    color: #444; 
+  }
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin:auto 20%;
 }
