@@ -1,0 +1,21 @@
+@media only screen and (max-width: 740px) {
+    #wrapper { width: 80%; }
+    h1{font-size: 4vw;}
+    .infoPerso{
+        flex-direction: column;
+    }
+    }
+    @media only screen and (max-width: 570px) {
+    #wrapper { width: 90%; }
+    h1{font-size: 5vw;}
+    .infoPerso{
+        flex-direction: column;
+    }
+    }
+    @media only screen and (max-width: 480px) {
+    #wrapper { width: 100%; }
+    h1{font-size: 6vw;}
+    .infoPerso{
+        flex-direction: column;
+    }
+    }
