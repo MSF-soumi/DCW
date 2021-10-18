@@ -1,13 +1,23 @@
 html, button, input, select, textarea {
-    color: rgb(238, 203, 203);
-    background-color: rgb(121, 63, 63);
+    color: #444; ;
+    background-color: rgb(240, 221, 221);
 }
     
 html { 
     font-size: 1em; 
     line-height: 1.4; 
 }
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
 #wrapper{
     max-width: 900px;
     min-height: 320px;
+    margin: auto;
+}
+#image{
+    border: 1px #ccc;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
