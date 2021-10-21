@@ -12,6 +12,10 @@ h1{
     font-size: 2vw;
     text-decoration: underline;
 }
+.ui-tooltip {
+    max-width: 300px;
+    background-color: rgb(160, 112, 112);
+  }
 #wrapper{
     max-width: 900px;
     min-height: 320px;

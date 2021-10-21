@@ -8,8 +8,7 @@
         <meta name="keywords" content="web,developer,resume" />
         <meta name="author" content="Mon nom">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/resume.css" />
-        <link rel="stylesheet" href="css/responsive.css">
+        
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
         crossorigin="anonymous"
@@ -17,7 +16,13 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <!--[if lt IE 9]>
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/resume.css" />
+        <link rel="stylesheet" href="css/responsive.css">
+        <script src="moncv.js"></script>
+      <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
     </head>
     <body>
@@ -70,9 +75,10 @@
                   </div>
                 <article class="expPro">
                     <h1>Expériences professionnelles</h1>
-                    <article class="2020/ 21 JUN -21 JUL">
+                    <article class="2020">
                         <h2>Création d’un service Web pour IntCount</h2>
-                        <dl>
+                        <button onclick='details("b1")' id="b1">+</button>
+                        <dl id='exp1' style="display:none;">
                             <dt> Outils:</dt>
                             <dd> HTML, CSS, JavaScript, VueJs, DPD(deployd), Figma</dd>
         
@@ -81,9 +87,10 @@
                                 • Importation et affichage des données a partir de l’API</dd>
                         </dl>
                     </article>
-                    <article class="2019/ 10 JUL -30 JUL">
+                    <article class="2019">
                         <h2>Création d’une base de donnée pour Maroc Modis</h2>
-                        <dl>
+                        <button onclick='details("b2")' id='b2'>+</button>
+                        <dl id='exp2' style="display:none;">
                             <dt> Outils:</dt>
                             <dd>  Access/VBA</dd>
         
@@ -97,21 +104,24 @@
                 <div class='comptech'>
                     <h1>Competences techniques</h1>
                     <dl>
-                        <dt>Développement Web:</dt>
+                        <dt style="display: flex;" title="Un développeur web est un informaticien spécialisé dans la programmation ou expressément impliqué dans le développement des applications du World Wide Web, ou des applications qui sont exécutées à partir d'un serveur web sur un navigateur web et qui utilisent le protocole HTTP comme vecteur de transmission de l'information.">Développement Web: <p id='3'></p></dt>
                         <dd>HTML,CSS, JavaScript (ES6)/ VueJs, PHP/Laravel</dd>
     
-                        <dt>Développement Mobile:</dt>
+                        <dt style="display: flex;" title="Le développement d'applications mobiles est l'acte ou le processus par lequel une application mobile est développée pour les appareils mobiles, tels que les assistants numériques personnels, les assistants numériques d'entreprise ou les téléphones mobiles">Développement Mobile: <p id='2'></p></dt>
                         <dd>Android (Java)</dd>
     
-                        <dt>Base de données:</dt>
+                        <dt style="display: flex;" title="Une base de données permet de stocker et de retrouver des données structurées, semi-structurées ou des données brutes ou de l'information, souvent en rapport avec un thème ou une activité ; celles-ci peuvent être de natures différentes et plus ou moins reliées entre elles.">Base de données: <p id='5'></p></dt>
                         <dd>SQL/PLSQL, MYSQL, Oracle11g</dd>
                     
-                        <dt>Programmation:</dt>
+                        <dt style="display: flex;">Programmation: <p id='3'></p></dt>
                         <dd>C, C++, Java</dd>
                     
-                        <dt>Analyse et conception:</dt>
+                        <dt style="display: flex;">Analyse et conception: <p id='4'></p></dt>
                         <dd>Merise, UML</dd>
                     </dl>
+                    <canvas id="myCanvas" width="450" height="180">
+                        Canvas is not supported.
+                      </canvas>
     
                 </div>
                 <div class='other'>
